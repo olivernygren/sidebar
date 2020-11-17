@@ -6,8 +6,11 @@ body {
 
 .sidebar {
     position: fixed;
-    width: 0;
+    width: 0px;
     height: 20rem;
     background-color: black;
 }
 
+.show-sidebar {
+    width: 100%;
+}

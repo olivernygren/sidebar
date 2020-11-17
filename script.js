@@ -1,15 +1,16 @@
 
 const sidebarButton = document.getElementById('sidebar-btn');
-const sidebar = document.getElementById('sidebar')
+const sidebar = document.querySelector('.sidebar');
+const hasWidth = getComputedStyle(sidebar);
 
 sidebarButton.addEventListener('click', showSidebar);
 
 function showSidebar() {
 
-    if (sidebar.getComputedStyle('width = 100%')) {
-        sidebar.style.width = '0';
+    if (sidebar.classList.contains('show-sidebar')) {
+        sidebar.classList.remove('show-sidebar');
     } else {
-        sidebar.style.width = '100%';
+        sidebar.classList.add('show-sidebar');
     }
 
 }
