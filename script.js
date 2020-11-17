@@ -12,6 +12,7 @@ function showSidebar() {
     if (sidebar.classList.contains('show-sidebar')) {
 
         sidebar.classList.remove('show-sidebar');
+
         profile.classList.add('display-none');
         categories.classList.add('display-none');
         settings.classList.add('display-none');
@@ -19,6 +20,7 @@ function showSidebar() {
     } else {
 
         sidebar.classList.add('show-sidebar');
+        
         profile.classList.remove('display-none');
         categories.classList.remove('display-none');
         settings.classList.remove('display-none');
