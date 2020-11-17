@@ -2,15 +2,33 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-image: url(./background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .sidebar {
     position: fixed;
     width: 0px;
-    height: 20rem;
-    background-color: black;
+    height: 100vh;
+    background-color: rgba(65, 65, 65, 0.829);
+    transition: all 300ms ease-in-out;
 }
 
 .show-sidebar {
-    width: 100%;
+    width: 20%;
+}
+
+#sidebar-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 1rem 1rem;
+    margin: 1rem 0;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+#sidebar-btn:hover {
+    background-color: rgb(39, 39, 39);
 }
